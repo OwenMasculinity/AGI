@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>罗家田村</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+
+    <string-array name="spingarr1">
+        <item>全部样方</item>
+        <item>样方1</item>
+        <item>样方2</item>
+    </string-array>
+
+    <string-array name="landtype_array">
+        <item>农作物</item>
+        <item>园艺果树</item>
+        <item>林木</item>
+        <item>草地</item>
+        <item>水域</item>
+        <item>建筑物</item>
+        <item>道路</item>
+        <item>其他用地</item>
+        <item>设施农业用地类型</item>
+    </string-array>
+
+</resources>

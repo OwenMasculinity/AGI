@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/button_down" android:state_pressed="true"  android:height="40dp" />
+
+
+    <item android:drawable="@drawable/button_down" android:state_focused="true" android:height="40dp"/>
+    <item android:drawable="@drawable/button_on" android:height="40dp"/>
+
+</selector>

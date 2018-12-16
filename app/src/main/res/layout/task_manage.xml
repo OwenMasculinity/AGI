@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noMapBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/noMaptitle"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/return_w"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务包管理"
+                android:id="@+id/textView6"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="2dp"
+                android:password="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/TaskDownload"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" >
+
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/download"
+                android:text="已下载"
+                android:textColor="@drawable/radio_button_text"
+                android:background="@drawable/radio_button_left"
+                android:button="@null"
+                android:padding="8dp"
+                android:checked="true"
+                android:gravity="center"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nodownload"
+                android:text="未下载"
+                android:textColor="@drawable/radio_button_text"
+                android:background="@drawable/radio_button_right"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/download_layout">
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/download_task_list"
+                android:listSelector="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/nodownload_layout">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

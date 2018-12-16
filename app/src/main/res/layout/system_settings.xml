@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemSettingsActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/noMaptitle">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:id="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:paddingRight="5dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/return_w"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统设置"
+                android:id="@+id/textView"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="2dp"
+                android:password="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/noMapBackground">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/top_bar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:divider="@color/noMapDivider"
+            android:dividerHeight="2px"
+            android:background="#ffffff"
+            android:listSelector="@drawable/system_settings_list_item_bg" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/top_bar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:divider="@color/noMapDivider"
+            android:dividerHeight="2px"
+            android:background="#ffffff"
+            android:listSelector="@drawable/system_settings_list_item_bg"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/top_bar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+        <ListView
+            android:id="@+id/listView3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:divider="@color/noMapDivider"
+            android:dividerHeight="2px"
+            android:background="#ffffff"
+            android:listSelector="@drawable/system_settings_list_item_bg"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:background="@color/noMapDivider" />
+
+    </LinearLayout>
+</LinearLayout>

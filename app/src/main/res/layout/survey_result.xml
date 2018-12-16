@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_login"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/noMapBackground"
+tools:context="net.sytm.liaoningmobile.activity.LoginActivity"
+
+android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/noMaptitle">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/choosetask_title_layout">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/return_w"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调查结果"
+                android:id="@+id/surveyresult"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="2dp"
+                android:password="false" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2016清镇市-秋冬播面积调查"
+        android:textColor="@color/black"
+        android:background="@drawable/surveytitle"
+        android:id="@+id/textView3"
+        android:textSize="15dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/surveyselect"
+            android:popupBackground="#ffffffff"
+            android:id="@+id/spinner_countryside"
+            android:layout_margin="8dp"
+            android:entries="@array/spingarr"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"
+            android:paddingLeft="5dp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_yangfang"
+            android:layout_margin="8dp"
+            android:background="@drawable/surveyselect"
+            android:popupBackground="#ffffffff"
+            android:entries="@array/spingarr1"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/switch_btn_id"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/survey_pass_id"
+            android:text="已调查"
+            android:textColor="@drawable/radio_button_text"
+            android:background="@drawable/radio_button_left"
+            android:button="@null"
+            android:padding="8dp"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nosurvey_pass_id"
+
+            android:text="未调查"
+            android:textColor="@drawable/radio_button_text"
+            android:background="@drawable/radio_button_right"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/survey_layout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/survey_list"
+                android:listSelector="@color/transparent"
+                android:divider="@color/transparent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nosurvey_layout">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/transparent"
+                android:id="@+id/nosurvey_list" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
